@@ -1,0 +1,467 @@
+header {
+    backdrop-filter: blur(1px);
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+header > h1 {
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.5s ease;
+    animation: fadein 2s;
+    animation-iteration-count: initial;
+    animation-timing-function: linear;
+    z-index: 100;
+    display: inline-block;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    letter-spacing: -1px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 10px; /* Add margin at the bottom to separate from <p> */
+}
+
+header > p {
+    font-size: 26px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 102;
+    position: relative;
+    animation: fadein 2s;
+    animation-iteration-count: inherit;
+    animation-timing-function: linear;
+    margin-bottom: 10px; /* Add margin at the bottom to separate from <button> */
+}
+
+body {
+    background-image: url(rss/nisimi16_nice_house_people_in_side_ductwork_from_ac_bring_new_a_c1526c54-1f36-45db-b07a-6189df1a8cef.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+body > div > h3 {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    z-index: 103;
+    position: relative;
+    animation: fadein 2s;
+    animation-iteration-count: inherit;
+    animation-timing-function: linear;
+    margin-bottom: 20px; /* Add margin at the bottom to separate from <p> */
+}
+
+body > div > ul {
+    display: flex; /* Display list items in a row */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    gap: 20px; /* Space between items */
+    padding: 0;
+    margin: 0 auto; /* Center the ul within its parent */
+    list-style: none; /* Remove default list styling */
+}
+
+li {
+    margin: 20px;
+    font-size: 24px;
+    text-align: center;
+    list-style-type: none;
+    animation: fadein 2s;
+    animation-iteration-count: inherit;
+    animation-timing-function: linear;
+    color: rgb(253, 253, 253);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 103;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    width: auto; /* Ensure the width is determined by content */
+}
+
+body > div > ul > li > a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+#facebook, #instagram, #youtube {
+    width: 350px; /* Adjust width as needed */
+    margin-right: 100px;
+    margin-left: 170px;
+    backdrop-filter: blur(3px);
+    cursor: pointer;
+    float: none; /* Remove float */
+}
+
+#facebook:hover {
+    background-color: #3b5998;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+#instagram:hover {
+    background-color: #e4405f;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+#youtube:hover {
+    background-color: #bb0000;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+
+
+body > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between columns */
+    padding: 20px; /* Container padding */
+}
+
+body > div > div {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    padding: 20px;
+}
+
+body > div > div:hover {
+    background-color: rgba(255, 255, 255, 1); /* Fully transparent white background */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Increased shadow effect */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    color: black; /* Text color */
+    text-shadow: none;
+    transition: color 0.3s ease; /* Smooth transition */
+    transition: text-shadow 0.3s ease; /* Smooth transition */
+    transition: box-shadow 0.3s ease; /* Smooth transition */
+
+}
+
+
+body > div > div > p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: black; /* Text color */
+    margin: 0; /* Remove default margin */
+    text-shadow: none; 
+}
+
+body > div > div > p > span > img {
+    width: 1.5%;
+    max-width: 2%;
+}
+
+body > div > h3 {
+    grid-column: span 2; /* Make the h3 elements span across both columns */
+    text-align: center;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+body > div > ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+body > div > ul > li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Space between items */
+}
+
+body > div > ul > li img {
+    margin-right: 10px; /* Space between image and text */
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #eba523;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50%;
+    margin-left: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+.back-button:active {
+    background-color: #003f7f;
+}
+
+/* Responsive design */
+
+@media only screen and (max-width: 600px) {
+    body > div {
+        grid-template-columns: 1fr; /* One column for smaller screens */
+    }
+
+    body > div > h3 {
+        grid-column: 1 / -1; /* Span the whole width for smaller screens */
+    }
+
+    body > div > ul {
+        display: block; /* Display the list items as block elements */
+    }
+
+    body > div > ul > li {
+        margin-bottom: 10px; /* Space between items */
+        text-align: left; /* Align list items left for smaller screens */
+    }
+
+    body > div > ul > li img {
+        margin-right: 0; /* Remove right margin for smaller screens */
+    }
+
+    #facebook, #instagram, #youtube {
+        width: 100%; /* Full width for smaller screens */
+        margin-right: 0;
+        margin-left: 0;
+
+        float: none; /* Remove float for smaller screens */
+    }
+    
+    #facebook:hover, #instagram:hover, #youtube:hover {
+        background-color: #3b5998; /* Change button colors */
+        color: white;
+    }
+    
+    #facebook:active, #instagram:active, #youtube:active {
+        background-color: #003f7f; /* Change button colors */
+    }
+    
+    body > div > div {
+        padding: 10px; /* Reduce container padding for smaller screens */
+    }
+    
+    body > div > div:hover {
+        background-color: rgba(255, 255, 255, 1); /* Fully transparent white background */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Increased shadow effect */
+        transition: background-color 0.3s ease; /* Smooth transition */
+        color: black; /* Text color */
+        text-shadow: none; 
+    }
+    
+    body > div > div > p {
+        font-size: 14px; /* Reduce font size for smaller screens */
+    }
+    
+    body > div > div > p > span > img {
+        width: 10%; /* Reduce image size for smaller screens */
+        max-width: 10%;
+    }
+    
+    body > div > h3 {
+        margin-bottom: 10px; /* Reduce space below heading for smaller screens */
+    }
+    
+    body > div > ul {
+        display: block; /* Display the list items as block elements */
+    }
+    
+    body > div > ul > li {
+        margin-bottom: 5px; /* Reduce space between items for smaller screens */
+        text-align: left; /* Align list items left for smaller screens */
+    }
+    
+    body > div > ul > li img {
+        margin-right: 0; /* Remove right margin for smaller screens */
+    }
+    
+    body > div >.back-button {
+        width: 100%; /* Full width for smaller screens */
+        margin-right: 0;
+        margin-left: 0;
+
+        float: none; /* Remove float for smaller screens */
+    }
+    
+    footer {
+        padding: 5px; /* Reduce footer padding for smaller screens */
+    }
+    
+    footer > p {
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+    
+    footer > p > a {
+        color: rgb(14, 9, 153);
+        text-decoration: none;
+        margin-right: 20px;
+        transition: color 0.3s ease;
+        &:hover {
+            color: #679ce0;
+        }
+    }
+
+    footer > p > a:last-child {
+        margin-right: 0;
+    }
+}
+
+/* Dark mode */
+
+body.dark-mode {
+    background-color: #181818;
+    color: white;
+}
+
+body.dark-mode #title {
+    color: white;
+}
+
+body.dark-mode #facebook, body.dark-mode #instagram, body.dark-mode #youtube {
+    background-color: #3b5998;
+    color: white;
+}
+
+body.dark-mode #facebook:hover, body.dark-mode #instagram:hover, body.dark-mode #youtube:hover {
+    background-color: #3b5998;
+    color: white;
+}
+
+body.dark-mode #facebook:active, body.dark-mode #instagram:active, body.dark-mode #youtube:active {
+    background-color: #003f7f;
+    color: white;
+}
+
+body.dark-mode #container {
+    background-color: #181818;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode #container:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+body.dark-mode #container > div {
+    background-color: #181818;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode #container > div:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+body.dark-mode #container > div > p {
+    color: white;
+}
+
+body.dark-mode #container > div > p > span > img {
+    color: white;
+}
+
+body.dark-mode #container > div > h3 {
+    color: white;
+}
+
+body.dark-mode #container > div > ul {
+    color: white;
+}
+
+body.dark-mode #container > div > ul > li {
+    color: white;
+}
+
+body.dark-mode #container > div > ul > li img {
+    color: white;
+}
+
+body.dark-mode #container > div >.back-button {
+    background-color: #3b5998;
+    color: white;
+}
+
+body.dark-mode #container > div >.back-button:hover {
+    background-color: #3b5998;
+    color: white;
+}
+
+body.dark-mode #container > div >.back-button:active {
+    background-color: #003f7f;
+    color: white;
+}
+
+body.dark-mode #container > div >.back-button:focus {
+    outline: none;
+}
+
+
+
+footer {
+    backdrop-filter: blur(8px);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.959);
+    bottom: 0;
+    width: 100%;
+   
+}
+
+footer > p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+footer >p > a {
+    color: rgb(242, 242, 247);
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+    &:hover {
+        color: #679ce0;
+    }
+} 

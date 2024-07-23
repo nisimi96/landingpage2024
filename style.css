@@ -1,0 +1,291 @@
+header {
+    backdrop-filter: blur(1px);
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+header > h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    
+    text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    transition: background-color 0.5s ease;
+    animation: fadein 2s;
+    animation-iteration-count: initial;
+    animation-timing-function: linear;
+    z-index: 100;
+    display: inline-block;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    letter-spacing: -1px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 10px; /* Add margin at the bottom to separate from <p> */
+}
+
+header > p {
+    font-size: 26px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 102;
+    position: relative;
+    animation: fadein 2s;
+    animation-iteration-count: inherit;
+    animation-timing-function: linear;
+    margin-bottom: 10px; /* Add margin at the bottom to separate from <button> */
+}
+
+header > button {
+    background-color: #3e7cc2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fadein 2s;
+    animation-iteration-count: inherit;
+    animation-timing-function: linear;
+    z-index: 103;
+    transition: background-color 0.3s ease;
+}
+
+header > button:hover {
+    background-color: #376ab2;
+}
+
+header > button:focus {
+    outline: none;
+}
+
+header > button:active {
+    background-color: #33588c;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+header > button:disabled {
+    background-color: #3e7cc2;
+    cursor: not-allowed;
+}
+
+
+body {
+    background-image: url(rss/nisimi16_nice_house_people_in_side_ductwork_from_ac_bring_new_a_c1526c54-1f36-45db-b07a-6189df1a8cef.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+body > h2 {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    letter-spacing: -1px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 104;
+    position: relative;
+    animation: fadein 2s;
+    animation-iteration-count: inherit;
+    animation-timing-function: linear;
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+form > input[type="text"], form > input[type="email"], form > input[type="password"], form > input[type="tel"] {
+    width: 65%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+form > input[type="text"]:focus, form > input[type="email"]:focus, form > input[type="password"]:focus {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+form > button {
+    background-color: #3e7cc2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    z-index: 105;
+
+    &:hover {
+        background-color: #376ab2;
+    }
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        background-color: #33588c;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+    &:disabled {
+        background-color: #3e7cc2;
+        cursor: not-allowed;
+    }
+}
+
+form > label > a {
+    color: rgb(14, 9, 153);
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+    &:hover {
+        color: #679ce0;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideout {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideandrotate {
+    0% {
+        transform: translateY(0%) rotate(0deg);
+    }
+    100% {
+        transform: translateY(0%) rotate(360deg);
+    }
+}
+
+
+
+footer {
+    backdrop-filter: blur(8px);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.959);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 106;
+}
+
+footer > p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+footer >p > a {
+    color: rgb(242, 242, 247);
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+    &:hover {
+        color: #679ce0;
+    }
+}
